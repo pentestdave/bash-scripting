@@ -16,6 +16,7 @@ A bash/shell script is a computer program designed to be run by a Unix shell, a 
 10. [While Loops](#while-loops)
 11. [Until Loops](#until-loops)
 12. [For Loops](#for-loops)
+13. [Arrays](#arrays)
 
 ## Hello World
 
@@ -226,7 +227,7 @@ done
 
 ## Arrays
 
-An array is just like a variable, but instead allowing use to store just one variable, a group of variable (variables that belongs to each other) can be stored and accessed in an indexed and predictable manner.
+An array is just like a variable, but instead allowing use to store just one variable, a group of variable (variables that belongs to each other) can be stored and accessed in an indexed and predictable manner. [More about arrays](https://linuxconfig.org/how-to-use-arrays-in-bash-script)
 
 ```bash
 # Array of numbers

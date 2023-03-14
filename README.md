@@ -12,6 +12,10 @@ A bash/shell script is a computer program designed to be run by a Unix shell, a 
 6. [String Comparison Operators](#string-comparison-operators)
 7. [Numeric Comparison Operators](#numeric-comparison-operators)
 8. [Parenthesis Explained](#parenthesis-explained)
+9. [Loops](#loops)
+10. [While Loops](#while-loops)
+11. [Until Loops](#until-loops)
+12. [For Loops](#for-loops)
 
 ## Hello World
 
@@ -183,3 +187,51 @@ echo ${foo}one
 $ var="abcdefg"; echo ${var%d*}
 ```
 
+## Loops
+
+Loops allow us to take a series of commands and keep re-running them until a particular situation is reached. They are useful for automating repetitive tasks. [More about loops](https://ryanstutorials.net/bash-scripting-tutorial/bash-loops.php)
+
+### While Loops =>
+
+```bash
+counter=1
+while [ $counter -le 10 ]
+do
+        echo $counter
+((counter++))
+done
+```
+
+### Until Loops =>
+
+```bash
+counter=1
+until [ $counter -gt 10 ]
+do
+        echo $counter
+((counter++))
+done
+```
+
+### For Loops =>
+
+```bash
+# Looping over arrays. Arrays will documented in the next section.
+pets=("cat" "dog" "mouse" "frog")
+for animal in ${pets[@]}
+do
+        echo $animal
+done
+```
+
+## Arrays
+
+An array is just like a variable, but instead allowing use to store just one variable, a group of variable (variables that belongs to each other) can be stored and accessed in an indexed and predictable manner.
+
+```bash
+# Array of numbers
+numbers=(1 2 3 4 5)
+
+# Array of strings
+names=("Dave" "You" "Them" "They")
+```

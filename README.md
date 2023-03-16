@@ -17,6 +17,7 @@ A bash/shell script is a computer program designed to be run by a Unix shell, a 
 11. [Until Loops](#until-loops)
 12. [For Loops](#for-loops)
 13. [Arrays](#arrays)
+14. [Functions](#functions)
 
 ## Hello World
 
@@ -235,4 +236,21 @@ numbers=(1 2 3 4 5)
 
 # Array of strings
 names=("Dave" "You" "Them" "They")
+```
+
+## Functions
+
+Functions in Bash Scripting are a great way to reuse code.  It's a small chunk of code which you may call multiple times within your script.
+
+They are particularly useful if you have certain tasks which need to be performed several times.
+
+Instead of writing out the same code over and over you may write it once in a function then call that function every time. [More about functions](https://linuxize.com/post/bash-functions/)
+
+```bash
+function add()
+{
+    echo "$1 in addition to $2 is $(($1 + $2))"
+}
+
+add 5 7
 ```
